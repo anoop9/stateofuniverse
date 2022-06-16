@@ -73,23 +73,15 @@ public class ConwayGameOfLife {
                 int numberOfLiveNeighbourCells = computeNumberOfLiveNeighbourCells(seedGrid, row, column,
                         noOfRowsInGrid, numberOfColumnsInGrid);
 
-                //case for under population
-                if (seedGrid[row][column] == 1 && numberOfLiveNeighbourCells < 2) {
-                    nextGenGrid[row][column] = 0;
-                }
-                //lives to next generation
-                else if (seedGrid[row][column] == 1 && (numberOfLiveNeighbourCells == 2 || numberOfLiveNeighbourCells == 3)) {
-                    nextGenGrid[row][column] = 1;
-                }
-                //case of overcrowding
-                else if (seedGrid[row][column] == 1 && (numberOfLiveNeighbourCells > 3)) {
+                //case for under population or overcrowding
+                if (seedGrid[row][column] == 1 && (numberOfLiveNeighbourCells < 2 || numberOfLiveNeighbourCells > 3)) {
                     nextGenGrid[row][column] = 0;
                 }
                 //case of reproduction
                 else if (seedGrid[row][column] == 0 && (numberOfLiveNeighbourCells == 3)) {
                     nextGenGrid[row][column] = 1;
                 } else {
-                    nextGenGrid[row][column] = seedGrid[row][column]; //any other cases
+                    nextGenGrid[row][column] = seedGrid[row][column]; //any other cases including case of next generation
                 }
 
             }
