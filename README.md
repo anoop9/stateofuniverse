@@ -5,8 +5,8 @@ Make sure you have installed Java11
 Run following commands to execute the main java class
 ```
 cd src
-javac com/chargepoint/game/ConwayGameOfLife.java
-java com.chargepoint.game.ConwayGameOfLife
+javac com/chargepoint/game/GameMain.java
+java com.chargepoint.game.GameMain
 ```
 
 # Assumptions Made
