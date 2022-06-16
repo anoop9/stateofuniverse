@@ -80,8 +80,10 @@ public class ConwayGameOfLife {
                 //case of reproduction
                 else if (seedGrid[row][column] == 0 && (numberOfLiveNeighbourCells == 3)) {
                     nextGenGrid[row][column] = 1;
-                } else {
-                    nextGenGrid[row][column] = seedGrid[row][column]; //any other cases including case of next generation
+                }
+                //any other cases including case of next generation
+                else {
+                    nextGenGrid[row][column] = seedGrid[row][column];
                 }
 
             }
