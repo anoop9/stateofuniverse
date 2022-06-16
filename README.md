@@ -18,3 +18,4 @@ int numberOfTicks = 3;
 
 ```
 4) Every cell is grid is filled with either '0' or '1' and no other value
+5) Not adding any unit testing frameworks (like Junit) for testing the ConwayGameOfLife class for time being 
