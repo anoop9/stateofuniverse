@@ -2,7 +2,8 @@
 # Instructions to run the project
 Make sure you have installed Java11
 
-Run following commands to execute the main java class
+Run following commands to execute the main java class 
+or else you can run the "GameMain.java" through your IDE
 ```
 cd src
 javac com/chargepoint/game/GameMain.java
