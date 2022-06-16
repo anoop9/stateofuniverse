@@ -2,6 +2,13 @@ package com.chargepoint.game;
 
 import java.util.Arrays;
 
+/**
+ * The class has the main method to run the Conway Game of Life.
+ * Depending on the number of ticks and seed grid provided in this class, it prints the next generation
+ * of grids. The seed of the system can be considered as a 2D int array with values either '0' or '1' for each cell.
+ * The vale '0' denotes a dead cell in this game while '1' denotes a live cell.
+ */
+
 public class GameMain {
     public static void main(String args[]) {
         int numberOfTicks = 3; //modify this field to change the number of ticks
